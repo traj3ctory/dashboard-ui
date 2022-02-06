@@ -6,6 +6,7 @@ import router from './routes/main.routes';
 import BaseComponent from './components/BaseComponents';
 
 import './styles/main.scss';
+import "./plugins/bootstrap";
 import "./plugins/primevue";
 
 Vue.use(PrimeVue);

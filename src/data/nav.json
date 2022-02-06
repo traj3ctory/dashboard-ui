@@ -1,26 +1,26 @@
 [
   {
     "path": "#",
-    "name": "/home"
+    "name": "Overview"
   },
   {
     "path": "#",
-    "name": "/dashboard"
+    "name": "Notifications"
   },
   {
     "path": "#",
-    "name": "/projects"
+    "name": "Analytics"
   },
   {
     "path": "#",
-    "name": "/tasks"
+    "name": "Saved reports"
   },
   {
     "path": "#",
-    "name": "/reporting"
+    "name": "Trade history"
   },
   {
     "path": "#",
-    "name": "/users"
+    "name": "User reports"
   }
 ]

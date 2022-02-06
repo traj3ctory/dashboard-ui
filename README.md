@@ -8,8 +8,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 Install project with yarn
 
 ```bash
-    git clone https://github.com/traj3ctory/dashboardUi.git
-    cd dashboardUi
+    git clone https://github.com/traj3ctory/dashboard-ui.git
+    cd dashboard-ui
     yarn
     yarn serve
 ```

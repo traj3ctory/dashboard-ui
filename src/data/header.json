@@ -1,26 +1,26 @@
 [
   {
     "path": "#",
-    "name": "/home"
+    "name": "home"
   },
   {
     "path": "#",
-    "name": "/dashboard"
+    "name": "dashboard"
   },
   {
     "path": "#",
-    "name": "/projects"
+    "name": "projects"
   },
   {
     "path": "#",
-    "name": "/tasks"
+    "name": "tasks"
   },
   {
     "path": "#",
-    "name": "/reporting"
+    "name": "reporting"
   },
   {
     "path": "#",
-    "name": "/users"
+    "name": "users"
   }
 ]
