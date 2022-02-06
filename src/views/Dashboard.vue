@@ -11,6 +11,8 @@
           <BaseDashboardCard />
         </div>
       </div>
+      <DashboardFilter />
+      <Table />
     </main>
   </div>
 </template>
@@ -19,6 +21,8 @@
 import Header from "../components/Layout/Header.vue";
 import Nav from "../components/Layout/Nav.vue";
 import UserDetail from "../components/views/UserDetail.vue";
+import Table from "../components/views/Table.vue";
+import DashboardFilter from "../components/views/DashboardFilter.vue";	
 
 export default {
   name: "Dashboard",
@@ -26,9 +30,11 @@ export default {
     Header,
     Nav,
     UserDetail,
+    Table,
+    DashboardFilter,
   },
 };
 </script>
 
-<style>
+<style type="scss" scoped>
 </style>

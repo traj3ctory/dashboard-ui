@@ -1,4 +1,14 @@
 div.wrapper{
     // background-color: #eeeeee;
     font-size: 0.9rem;
+
+    div.p-progressbar {
+        height: 0.35rem;
+        div.p-progressbar-value{
+          background: #800080;
+        }
+      }
+      span.p-column-title{
+        font-size: 0.85rem;
+      }
 }
