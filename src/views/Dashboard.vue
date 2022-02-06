@@ -6,6 +6,11 @@
     </header>
     <main class="px-lg-4 px-md-3 px-1">
       <UserDetail />
+      <div class="row">
+        <div class="col-md-4 col-12 mb-3" v-for="(el, i) in 3" :key="i">
+          <BaseDashboardCard />
+        </div>
+      </div>
     </main>
   </div>
 </template>
