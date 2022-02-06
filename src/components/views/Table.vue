@@ -33,7 +33,11 @@
             </div>
           </template>
         </Column>
-        <Column field="license" header="License Use" :headerStyle="{ minWidth: '8rem' }">
+        <Column
+          field="license"
+          header="License Use"
+          :headerStyle="{ minWidth: '8rem' }"
+        >
           <template #body="slotProps">
             <ProgressBar :value="slotProps.data.license" :showValue="false" />
           </template>
@@ -45,7 +49,11 @@
             }}</span>
           </template>
         </Column>
-        <Column field="users" header="Users" :headerStyle="{ minWidth: '8rem' }">
+        <Column
+          field="users"
+          header="Users"
+          :headerStyle="{ minWidth: '8rem' }"
+        >
           <template #body="slotProps">
             <img
               v-for="(user, index) in 5"
@@ -80,7 +88,7 @@
           </template>
         </Column>
         <template #footer>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between align-items-center d-md-flex d-none">
             <div>
               <Button
                 class="p-button-sm p-button-raised p-button-text"
@@ -92,6 +100,22 @@
               />
             </div>
             <small>page 1 of 50</small>
+          </div>
+          <!-- Small Screen -->
+          <div
+            class="
+              d-flex
+              justify-content-between
+              align-items-center
+              d-md-none d-block
+            "
+          >
+            <Button class="p-button-sm p-button-text" icon="pi pi-arrow-left" />
+            <small>page 1 of 50</small>
+            <Button
+              class="p-button-sm p-button-text"
+              icon="pi pi-arrow-right"
+            />
           </div>
         </template>
       </DataTable>

@@ -1,10 +1,10 @@
 <template>
-  <section class="user_details">
-    <div>
+  <section class="row user_details">
+    <div class="col-lg-9 col-md-9 col-12 mb-3">
       <h5>Welcome back, {{ name }}</h5>
       <small>Track, manage and forecast your customers and orders.</small>
     </div>
-    <div>
+    <div class="col-md-3 col-12">
       <Button
         label="Import"
         icon="pi pi-upload"
