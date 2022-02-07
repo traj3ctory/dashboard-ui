@@ -55,5 +55,15 @@ section.user_details {
     font-size: 0.8rem;
     margin-right: 0.4rem;
   }
+  h5 {
+    font-weight: 500;
+    font-size: 1.875;
+    color: #101828;
+  }
+  small {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #667085;
+  }
 }
 </style>

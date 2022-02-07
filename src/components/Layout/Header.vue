@@ -73,7 +73,7 @@ export default {
   data() {
     return {
       route: route,
-      title: "Vue.js",
+      title: "Untitled UI",
     };
   },
 };
