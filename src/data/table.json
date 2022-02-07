@@ -4,7 +4,14 @@
         "site": "catalogapp.io",
         "license": 75,
         "status": "churned",
-        "users": "dsad231ff",
+        "users": [
+            "user1",
+            "user2",
+            "user3",
+            "user4",
+            "user5"
+        ],
+        "extra": 5,
         "about": "Orange"
     },
     {
@@ -12,7 +19,14 @@
         "site": "getcircooles.com",
         "license": 69,
         "status": "customer",
-        "users": "dsad231ff",
+        "users": [
+            "user1",
+            "user4",
+            "user3",
+            "user5",
+            "user2"
+        ],
+        "extra": 8,
         "about": "Orange"
     },
     {
@@ -20,7 +34,14 @@
         "site": "cmdr.ai",
         "license": 20,
         "status": "churned",
-        "users": "dsad231ff",
+        "users": [
+            "user2",
+            "user1",
+            "user3",
+            "user4",
+            "user5"
+        ],
+        "extra": 2,
         "about": "Orange"
     },
     {
@@ -28,7 +49,14 @@
         "site": "hourglass.app",
         "license": 84,
         "status": "churned",
-        "users": "dsad231ff",
+        "users": [
+            "user1",
+            "user2",
+            "user4",
+            "user3",
+            "user5"
+        ],
+        "extra": "",
         "about": "Orange"
     },
     {
@@ -36,7 +64,14 @@
         "site": "getlayers.io",
         "license": 22,
         "status": "customer",
-        "users": "dsad231ff",
+        "users": [
+            "user1",
+            "user3",
+            "user2",
+            "user4",
+            "user5"
+        ],
+        "extra": 4,
         "about": "Orange"
     },
     {
@@ -44,7 +79,14 @@
         "site": "quotient.co",
         "license": 12,
         "status": "customer",
-        "users": "dsad231ff",
+        "users": [
+            "user3",
+            "user2",
+            "user1",
+            "user4",
+            "user5"
+        ],
+        "extra": 6,
         "about": "Orange"
     },
     {
@@ -52,7 +94,14 @@
         "site": "sisyphus.com",
         "license": 22,
         "status": "churned",
-        "users": "dsad231ff",
+        "users": [
+            "user1",
+            "user4",
+            "user2",
+            "user3",
+            "user5"
+        ],
+        "extra": 4,
         "about": "Orange"
     }
 ]

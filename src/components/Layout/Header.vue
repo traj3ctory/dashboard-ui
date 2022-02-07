@@ -1,10 +1,10 @@
 <template>
   <section class="base_header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm border-bottom">
+      <div class="container">
         <a class="navbar-brand" href="#">
           <img
-            :src="require('@/assets/logo.png')"
+            :src="require('@/assets/Logo.svg')"
             alt="header logo"
             width="25rem"
             height="auto"
@@ -29,12 +29,18 @@
             </li>
           </ul>
           <ul class="header_end">
-            <li><Button label="Upgrade now" icon="pi pi-link" class="p-button-sm" /></li>
+            <li>
+              <Button
+                label="Upgrade now"
+                icon="pi pi-link"
+                class="p-button-sm"
+              />
+            </li>
             <li><i class="pi pi-cog" /></li>
             <li><i class="pi pi-bell" /></li>
             <li>
               <img
-                :src="require('@/assets/logo.png')"
+                :src="require('@/assets/AvatarUser.svg')"
                 alt="user image"
                 width="30px"
                 height="30px"
@@ -67,15 +73,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$color: #344054;
 section.base_header {
   ul {
     list-style-type: none;
     li {
       a.nav-link {
-        color: #000;
+        color: $color;
         text-transform: capitalize;
         &.active {
-          color: #fff;
+          color: $color;
         }
       }
     }
@@ -84,15 +91,15 @@ section.base_header {
       height: 100%;
       display: flex;
       align-items: center;
-      li{
+      li {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
-        button.p-button-sm{
+        button.p-button-sm {
           background-color: transparent;
-          color: #111;
-          border: 1px solid #bbb;
-          border-left: none;
-          border-right: none;
+          color: $color;
+          border: 1px solid #D0D5DD;
+          // border-left: none;
+          // border-right: none;
           border-radius: 0.4rem;
           font-size: 0.8rem;
         }

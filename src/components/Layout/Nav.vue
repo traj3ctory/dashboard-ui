@@ -1,7 +1,7 @@
 <template>
   <section class="base_nav">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item" v-for="(el, i) in route" :key="i">
@@ -42,15 +42,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$color: #344054;
 section.base_nav {
   ul {
     list-style-type: none;
     li {
       a.nav-link {
-        color: #111;
+        color: $color;
         font-size: 0.9rem;
         &.active {
-          color: #fff;
+          color: $color;
         }
       }
     }
@@ -62,9 +63,9 @@ section.base_nav {
     align-items: center;
     input {
       background-color: transparent;
-      color: #111;
-      border: 1px solid #bbbbbb;
-      border-left: none;
+      color: $color;
+      border: 1px solid #D0D5DD;
+      // border-left: none;
       border-radius: 0.4rem;
       font-size: 0.8rem;
       min-width: 16rem;

@@ -1,14 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab&display=swap');
 div.wrapper{
     // background-color: #eeeeee;
-    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
 
     div.p-progressbar {
-        height: 0.35rem;
+        height: 0.5rem;
+        border-radius: 0.25rem;
+        width: 4.106rem;
+        max-width: 4.106rem;
         div.p-progressbar-value{
-          background: #800080;
+          background: #7F56D9;
         }
       }
       span.p-column-title{
-        font-size: 0.85rem;
+        font-size: 0.75rem;
+        color: #667085;
+        font-weight: 500;
+      }
+      div.p-datatable-wrapper{
+        padding: 0;
+      }
+      div.p-datatable-footer{
+        background-color: #ffffff;
       }
 }

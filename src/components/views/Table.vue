@@ -1,11 +1,12 @@
 <template>
   <section class="table">
-    <div class="card">
+    <div class="card border-0 shadow">
       <DataTable
         :value="products"
         :selection.sync="selectedProducts"
         responsiveLayout="scroll"
         dataKey="company"
+        class="p-datatable-striped"
       >
         <Column
           selectionMode="multiple"
@@ -18,15 +19,15 @@
           sortable
         >
           <template #body="slotProps">
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center h-100">
               <img
                 :id="slotProps.data.company"
-                :src="require('@/assets/logo.png')"
-                class="img-fluid shadow-sm mx-3 header_img"
-                width="20px"
-                height="auto"
+                :src="require(`@/assets/${slotProps.data.company}.svg`)"
+                class="img-fluid mx-3 header_img"
+                width="40"
+                height="40"
               />
-              <div>
+              <div class="mt-2">
                 <strong>{{ slotProps.data.company }}</strong>
                 <p>{{ slotProps.data.site }}</p>
               </div>
@@ -56,15 +57,15 @@
         >
           <template #body="slotProps">
             <img
-              v-for="(user, index) in 5"
+              v-for="(user, index) in slotProps.data.users"
               :key="index"
               :id="slotProps.data.company"
-              :src="require('@/assets/logo.png')"
-              class="img-fluid rounded-circle table_img shadow-sm"
-              width="30px"
-              height="auto"
+              :src="require(`@/assets/${user}.svg`)"
+              class="img-fluid table_img"
+              width="24"
+              height="24"
             />
-            <small>+5</small>
+            <small class="extra" v-show="slotProps.data.extra">+{{ slotProps.data.extra }}</small>
           </template>
         </Column>
         <Column field="about" header="About">
@@ -78,17 +79,24 @@
             <Button
               :id="slotProps.data.company"
               icon="pi pi-trash"
-              class="p-button-sm p-button-raised p-button-text"
+              class="p-button-sm p-button-text"
             />
             <Button
               :id="slotProps.data.company"
               icon="pi pi-pencil"
-              class="p-button-sm p-button-raised p-button-text"
+              class="p-button-sm p-button-text"
             />
           </template>
         </Column>
         <template #footer>
-          <div class="d-flex justify-content-between align-items-center d-md-flex d-none">
+          <div
+            class="
+              d-flex
+              justify-content-between
+              align-items-center
+              d-md-flex d-none
+            "
+          >
             <div>
               <Button
                 class="p-button-sm p-button-raised p-button-text"
@@ -164,31 +172,37 @@ section.table {
     margin-right: 0.25rem;
   }
   img.table_img {
-    margin-left: -1rem;
+    margin-left: -0.5rem;
   }
   small {
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: #800080;
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #344054;
+  }
+  small.extra {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #7f56d9;
   }
   span {
     padding: 0.2rem 0.5rem;
     border-radius: 0.5rem;
     font-size: 0.75rem;
-    font-weight: bold;
+    font-weight: 500;
+    line-height: 18px;
     text-transform: capitalize;
     &.customer {
-      color: #158e15;
-      background-color: #36b3361c;
+      color: #027a48;
+      background-color: #ecfdf3;
     }
     &.churned {
-      color: #800080;
-      background-color: #80008013;
+      color: #344054;
+      background-color: #f2f4f7;
     }
   }
   strong,
   p {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
   img.header_img {
     max-height: 2rem;
