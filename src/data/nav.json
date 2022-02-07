@@ -1,7 +1,8 @@
 [
   {
     "path": "#",
-    "name": "Overview"
+    "name": "Overview",
+    "active": true
   },
   {
     "path": "#",

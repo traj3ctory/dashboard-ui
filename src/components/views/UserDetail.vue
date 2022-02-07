@@ -7,7 +7,7 @@
     <div class="col-md-3 col-12">
       <Button
         label="Import"
-        icon="pi pi-upload"
+        icon="pi pi-cloud-upload"
         class="p-button-sm p-button-raised p-button-text"
       />
       <Button

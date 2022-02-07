@@ -1,6 +1,6 @@
 <template>
   <section class="table">
-    <div class="card border-0 shadow">
+    <div class="card border-0 shadow-sm">
       <DataTable
         :value="products"
         :selection.sync="selectedProducts"

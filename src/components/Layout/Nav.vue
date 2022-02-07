@@ -5,7 +5,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item" v-for="(el, i) in route" :key="i">
-              <a class="nav-link" :href="el.path">{{ el.name }}</a>
+              <a
+                class="nav-link"
+                :class="el.active ? 'active' : ''"
+                :href="el.path"
+                >{{ el.name }}</a
+              >
             </li>
           </ul>
           <div class="nav_end">
@@ -49,9 +54,10 @@ section.base_nav {
     li {
       a.nav-link {
         color: $color;
-        font-size: 0.9rem;
+        font-size: 1rem;
         &.active {
           color: $color;
+          background: #f9fafb;
         }
       }
     }
@@ -64,7 +70,7 @@ section.base_nav {
     input {
       background-color: transparent;
       color: $color;
-      border: 1px solid #D0D5DD;
+      border: 1px solid #d0d5dd;
       // border-left: none;
       border-radius: 0.4rem;
       font-size: 0.8rem;

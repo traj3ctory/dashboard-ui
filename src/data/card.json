@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Total customers",
+        "value": "2,420",
+        "percentage": "40",
+        "dataSet": [39, 81, 50, 140]
+    },
+    {
+        "title": "Members",
+        "value": "1,210",
+        "percentage": "10",
+        "dataSet": [140, 50, 81, 39]
+    },
+    {
+        "title": "Active now",
+        "value": "316",
+        "percentage": "20",
+        "dataSet": [39, 81, 50, 140]
+    }
+]

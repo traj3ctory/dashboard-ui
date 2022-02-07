@@ -1,6 +1,13 @@
 <template>
   <section class="base_header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm border-bottom">
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-light
+        bg-white
+        shadow-sm
+        border-bottom
+      "
+    >
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -25,7 +32,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item" v-for="(el, i) in route" :key="i">
-              <a class="nav-link" :href="el.path">{{ el.name }}</a>
+              <a class="nav-link" :class="(el.active) ? 'active' : ''" :href="el.path">{{ el.name }}</a>
             </li>
           </ul>
           <ul class="header_end">
@@ -81,8 +88,10 @@ section.base_header {
       a.nav-link {
         color: $color;
         text-transform: capitalize;
+        font-size: 1rem;
         &.active {
           color: $color;
+          background: #f9fafb;
         }
       }
     }
@@ -97,7 +106,7 @@ section.base_header {
         button.p-button-sm {
           background-color: transparent;
           color: $color;
-          border: 1px solid #D0D5DD;
+          border: 1px solid #d0d5dd;
           // border-left: none;
           // border-right: none;
           border-radius: 0.4rem;
