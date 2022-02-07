@@ -5,7 +5,6 @@
         navbar navbar-expand-lg navbar-light
         bg-white
         shadow-sm
-        border-bottom
       "
     >
       <div class="container">
@@ -32,7 +31,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item" v-for="(el, i) in route" :key="i">
-              <a class="nav-link" :class="(el.active) ? 'active' : ''" :href="el.path">{{ el.name }}</a>
+              <a
+                class="nav-link"
+                :class="el.active ? 'active' : ''"
+                :href="el.path"
+                >{{ el.name }}</a
+              >
             </li>
           </ul>
           <ul class="header_end">
@@ -82,6 +86,10 @@ export default {
 <style lang="scss" scoped>
 $color: #344054;
 section.base_header {
+  nav.bg-white {
+    background: #eaecf0;
+    border-bottom: 1px solid #f1f1f1;
+  }
   ul {
     list-style-type: none;
     li {

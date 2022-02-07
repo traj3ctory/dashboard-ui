@@ -1,6 +1,6 @@
 <template>
   <section class="base_nav">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -49,6 +49,10 @@ export default {
 <style lang="scss" scoped>
 $color: #344054;
 section.base_nav {
+  nav.bg-white {
+    background: #eaecf0;
+    border-bottom: 1px solid #f1f1f1;
+  }
   ul {
     list-style-type: none;
     li {

@@ -10,16 +10,16 @@
       >
         <Column
           selectionMode="multiple"
-          :headerStyle="{ width: '3em' }"
+          :headerStyle="{ width: '3em', paddingLeft: '1.4em' }"
         ></Column>
         <Column
           field="company"
           header="Company"
-          :headerStyle="{ width: '15rem' }"
+          :headerStyle="{ minWidth: '15rem', paddingLeft: '2.6rem' }"
           sortable
         >
           <template #body="slotProps">
-            <div class="d-flex align-items-center h-100">
+            <div class="d-flex align-items-center h-100 w-100">
               <img
                 :id="slotProps.data.company"
                 :src="require(`@/assets/${slotProps.data.company}.svg`)"
@@ -53,7 +53,7 @@
         <Column
           field="users"
           header="Users"
-          :headerStyle="{ minWidth: '8rem' }"
+          :headerStyle="{ minWidth: '10rem' }"
         >
           <template #body="slotProps">
             <img
@@ -65,13 +65,19 @@
               width="24"
               height="24"
             />
-            <small class="extra" v-show="slotProps.data.extra">+{{ slotProps.data.extra }}</small>
+            <small class="extra" v-show="slotProps.data.extra"
+              >+{{ slotProps.data.extra }}</small
+            >
           </template>
         </Column>
-        <Column field="about" header="About">
+        <Column
+          field="about"
+          header="About"
+          :headerStyle="{ minWidth: '15rem' }"
+        >
           <template #body="slotProps">
-            <strong>{{ slotProps.data.about }}</strong>
-            <p>{{ slotProps.data.site }}</p>
+            <p class="about about_header">{{ slotProps.data.about[0] }}</p>
+            <p class="about about_subheader">{{ slotProps.data.about[1] }}</p>
           </template>
         </Column>
         <Column field="" header="" :headerStyle="{ minWidth: '8rem' }">
@@ -107,7 +113,7 @@
                 label="Next"
               />
             </div>
-            <small>page 1 of 50</small>
+            <small>page 1 of 10</small>
           </div>
           <!-- Small Screen -->
           <div
@@ -172,7 +178,7 @@ section.table {
     margin-right: 0.25rem;
   }
   img.table_img {
-    margin-left: -0.5rem;
+    margin-left: -0.4rem;
   }
   small {
     font-size: 0.875rem;
@@ -207,6 +213,19 @@ section.table {
   img.header_img {
     max-height: 2rem;
     align-items: center;
+  }
+  p.about {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875;
+    line-height: 1.25;
+    margin-bottom: 0.4rem;
+  }
+  p.about_header {
+    color: #101828;
+  }
+  p.about_subheader {
+    color: #667085;
   }
 }
 </style>

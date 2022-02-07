@@ -12,7 +12,7 @@
             "user5"
         ],
         "extra": 5,
-        "about": "Orange"
+        "about": ["Content curating app", "Brings all your news into one place" ]
     },
     {
         "company": "Circooles",
@@ -27,7 +27,7 @@
             "user2"
         ],
         "extra": 8,
-        "about": "Orange"
+        "about": ["Design software", "Super lightweight design app" ]
     },
     {
         "company": "Command+R",
@@ -42,7 +42,7 @@
             "user5"
         ],
         "extra": 2,
-        "about": "Orange"
+        "about": ["Data prediction", "AI and machine learning data" ]
     },
     {
         "company": "Hourglass",
@@ -57,7 +57,7 @@
             "user5"
         ],
         "extra": "",
-        "about": "Orange"
+        "about": ["Productivity app", "Time management and productivity" ]
     },
     {
         "company": "Layers",
@@ -71,8 +71,8 @@
             "user4",
             "user5"
         ],
-        "extra": 4,
-        "about": "Orange"
+        "extra": 1,
+        "about": ["Web app integrations", "Connect web apps seamlessly" ]
     },
     {
         "company": "Quotient",
@@ -87,7 +87,7 @@
             "user5"
         ],
         "extra": 6,
-        "about": "Orange"
+        "about": ["Sales CRM", "Web-based sales doc management" ]
     },
     {
         "company": "Sisyphus",
@@ -102,6 +102,6 @@
             "user5"
         ],
         "extra": 4,
-        "about": "Orange"
+        "about": ["Automation and workflow", "Time tracking, invoicing and expenses" ]
     }
 ]

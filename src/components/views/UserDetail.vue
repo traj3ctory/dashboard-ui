@@ -45,6 +45,8 @@ export default {
 <style lang="scss" scoped>
 section.user_details {
   margin-top: 2rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: row;

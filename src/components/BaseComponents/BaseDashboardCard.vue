@@ -18,7 +18,7 @@
                 >{{ data.percentage }}%</span
               ></span
             >
-            vs last month</small
+            <span class="desc">vs last month</span></small
           >
         </div>
         <div class="col-5">
@@ -129,6 +129,11 @@ section.dashboard_card {
     color: #101828;
     font-size: 2.25rem;
   }
+  span.desc{
+    font-size: 0.875rem;
+    padding-left: 0.5rem;
+    word-break: keep-all;
+  }
   div.chart_align {
     display: flex;
     flex-direction: column;
@@ -145,10 +150,14 @@ section.dashboard_card {
     }
   }
   .downwards {
-    color: #f04438;
+    color: #B42318;
+    font-size: 0.875rem;
+    font-weight: 500;
   }
   .upwards {
-    color: #12b76a;
+    color: #027A48;
+    font-size: 0.875rem;
+    font-weight: 500;
   }
 }
 </style>

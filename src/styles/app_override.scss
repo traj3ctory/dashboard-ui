@@ -23,4 +23,14 @@ div.wrapper{
       div.p-datatable-footer{
         background-color: #ffffff;
       }
+      
+  .p-datatable {
+    .p-datatable-tbody {
+      tr {
+        td {
+          padding: 1rem 1.5rem;
+        }
+      }
+    }
+     }
 }
