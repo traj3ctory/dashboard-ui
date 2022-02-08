@@ -10,7 +10,7 @@
             class="btn"
           />
         </div>
-        <div class="col-md-4 col-6 mb-3 order-md-1 order-1">
+        <div class="col-md-4 col-6 mb-3 order-md-1 order-1 px-1">
           <Button
             label="US, AU, +4"
             icon="pi pi-times"
@@ -18,7 +18,7 @@
             class="btn"
           />
         </div>
-        <div class="col-md-4 col-12 mb-3 order-md-2 order-0">
+        <div class="col-md-4 col-12 mb-3 order-md-2 order-0 px-1">
           <Button
             label="More filters"
             icon="pi pi-align-center"
@@ -28,7 +28,17 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 offset-md-4 d-flex justify-content-md-end col-12 order-md-last order-first mb-3">
+    <div
+      class="
+        col-md-4
+        offset-md-4
+        d-flex
+        justify-content-md-end
+        col-12
+        order-md-last order-first
+        mb-3
+      "
+    >
       <form action="#">
         <span class="p-input-icon-left w-100">
           <i class="pi pi-search" />
@@ -72,15 +82,25 @@ section.filter {
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 0.5rem;
     padding: 0.635rem 1rem;
+    background: #f9f5ff;
+    border: 1px solid #f9f5ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
     &.btn {
-      background-color: #f9f5ff;
-      border: 1px solid #f9f5ff;
       color: #6941c6;
     }
     &.btn_alt {
       background-color: #ffffff;
       border: 1px solid #d0d5dd;
       color: #344054;
+    }
+    &:hover{
+
+    background: #f9f5ff;
+    border: 1px solid #f9f5ff;
     }
   }
   input {

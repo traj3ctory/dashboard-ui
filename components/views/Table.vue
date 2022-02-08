@@ -105,11 +105,11 @@
           >
             <div>
               <Button
-                class="p-button-sm p-button-raised p-button-text"
+                class="p-button-sm"
                 label="Previous"
               />
               <Button
-                class="p-button-sm p-button-raised p-button-text"
+                class="p-button-sm"
                 label="Next"
               />
             </div>
@@ -125,7 +125,7 @@
             "
           >
             <Button class="p-button-sm p-button-text" icon="pi pi-arrow-left" />
-            <small>page 1 of 50</small>
+            <small>page 1 of 10</small>
             <Button
               class="p-button-sm p-button-text"
               icon="pi pi-arrow-right"
@@ -172,10 +172,16 @@ export default {
 <style lang="scss" scoped>
 section.table {
   button {
-    color: #111111;
-    font-size: 0.8rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #344054;
     margin-left: 0.25rem;
     margin-right: 0.25rem;
+    background: #ffffff;
+    border: 1px solid #d0d5dd;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 0.375rem;
   }
   img.table_img {
     margin-left: -0.4rem;
