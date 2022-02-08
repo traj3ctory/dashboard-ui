@@ -1,13 +1,36 @@
 <template>
-  <section class="filter">
-    <div>
-      <Button label="All time" icon="pi pi-times" iconPos="right" class="btn" />
-      <Button label="US, AU, +4" icon="pi pi-times" iconPos="right" class="btn" />
-      <Button label="More filters" icon="pi pi-align-center" iconPos="left" class="btn_alt" />
+  <section class="filter row mx-sm-auto">
+    <div class="col-md-4 col-12 order-md-first order-last">
+      <div class="row">
+        <div class="col-md-4 col-6 mb-3 order-md-0 order-2">
+          <Button
+            label="All time"
+            icon="pi pi-times"
+            iconPos="right"
+            class="btn"
+          />
+        </div>
+        <div class="col-md-4 col-6 mb-3 order-md-1 order-1">
+          <Button
+            label="US, AU, +4"
+            icon="pi pi-times"
+            iconPos="right"
+            class="btn"
+          />
+        </div>
+        <div class="col-md-4 col-12 mb-3 order-md-2 order-0">
+          <Button
+            label="More filters"
+            icon="pi pi-align-center"
+            iconPos="left"
+            class="btn_alt w-100"
+          />
+        </div>
+      </div>
     </div>
-    <div>
+    <div class="col-md-4 offset-md-4 d-flex justify-content-md-end col-12 order-md-last order-first mb-3">
       <form action="#">
-        <span class="p-input-icon-left">
+        <span class="p-input-icon-left w-100">
           <i class="pi pi-search" />
           <InputText type="text" v-model="value" placeholder="Search" />
         </span>
@@ -66,12 +89,13 @@ section.filter {
     border: 1px solid #bbbbbb;
     border-radius: 0.5rem;
     font-size: 1rem;
-    min-width: 20rem;
-    width: 20rem;
-    max-width: 20rem;
+    min-width: 22.5rem;
+    width: 22.5rem;
+    max-width: 22.5rem;
     min-height: 2.75rem;
     height: 2.75rem;
     max-height: 2.75rem;
+    // padding: 10px 14px;
   }
 }
 </style>

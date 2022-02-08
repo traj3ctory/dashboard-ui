@@ -1,5 +1,5 @@
 <template>
-  <section class="base_nav">
+  <section class="base_nav d-md-block d-none">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
