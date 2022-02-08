@@ -166,6 +166,14 @@ export default {
       selectedProducts: null,
     };
   },
+  methods: {
+    onRowSelect(event) {
+      console.log(event);
+    },
+    onRowUnselect(event) {
+      console.log(event);
+    },
+  },
 };
 </script>
 
