@@ -1,0 +1,27 @@
+[
+  {
+    "path": "#",
+    "name": "Overview",
+    "active": true
+  },
+  {
+    "path": "#",
+    "name": "Notifications"
+  },
+  {
+    "path": "#",
+    "name": "Analytics"
+  },
+  {
+    "path": "#",
+    "name": "Saved reports"
+  },
+  {
+    "path": "#",
+    "name": "Trade history"
+  },
+  {
+    "path": "#",
+    "name": "User reports"
+  }
+]

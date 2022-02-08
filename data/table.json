@@ -1,0 +1,107 @@
+[
+    {
+        "company": "Catalog",
+        "site": "catalogapp.io",
+        "license": 75,
+        "status": "churned",
+        "users": [
+            "user1",
+            "user2",
+            "user3",
+            "user4",
+            "user5"
+        ],
+        "extra": 5,
+        "about": ["Content curating app", "Brings all your news into one place" ]
+    },
+    {
+        "company": "Circooles",
+        "site": "getcircooles.com",
+        "license": 69,
+        "status": "customer",
+        "users": [
+            "user1",
+            "user4",
+            "user3",
+            "user5",
+            "user2"
+        ],
+        "extra": 8,
+        "about": ["Design software", "Super lightweight design app" ]
+    },
+    {
+        "company": "Command+R",
+        "site": "cmdr.ai",
+        "license": 20,
+        "status": "churned",
+        "users": [
+            "user2",
+            "user1",
+            "user3",
+            "user4",
+            "user5"
+        ],
+        "extra": 2,
+        "about": ["Data prediction", "AI and machine learning data" ]
+    },
+    {
+        "company": "Hourglass",
+        "site": "hourglass.app",
+        "license": 84,
+        "status": "churned",
+        "users": [
+            "user1",
+            "user2",
+            "user4",
+            "user3",
+            "user5"
+        ],
+        "extra": "",
+        "about": ["Productivity app", "Time management and productivity" ]
+    },
+    {
+        "company": "Layers",
+        "site": "getlayers.io",
+        "license": 22,
+        "status": "customer",
+        "users": [
+            "user1",
+            "user3",
+            "user2",
+            "user4",
+            "user5"
+        ],
+        "extra": 1,
+        "about": ["Web app integrations", "Connect web apps seamlessly" ]
+    },
+    {
+        "company": "Quotient",
+        "site": "quotient.co",
+        "license": 12,
+        "status": "customer",
+        "users": [
+            "user3",
+            "user2",
+            "user1",
+            "user4",
+            "user5"
+        ],
+        "extra": 6,
+        "about": ["Sales CRM", "Web-based sales doc management" ]
+    },
+    {
+        "company": "Sisyphus",
+        "site": "sisyphus.com",
+        "license": 22,
+        "status": "churned",
+        "users": [
+            "user1",
+            "user4",
+            "user2",
+            "user3",
+            "user5"
+        ],
+        "extra": 4,
+        "about": ["Automation and workflow", "Time tracking, invoicing and expenses" ]
+    }
+]

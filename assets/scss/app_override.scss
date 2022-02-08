@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab&display=swap");
+div.wrapper {
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+div.wrapper div.p-progressbar {
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  width: 4.106rem;
+  max-width: 4.106rem;
+}
+div.wrapper div.p-progressbar div.p-progressbar-value {
+  background: #7f56d9;
+}
+div.wrapper span.p-column-title {
+  font-size: 0.75rem;
+  color: #667085;
+  font-weight: 500;
+}
+div.wrapper div.p-datatable-wrapper {
+  padding: 0;
+}
+div.wrapper div.p-datatable-footer {
+  background-color: #ffffff;
+}
+
+div.wrapper .p-datatable .p-datatable-tbody tr td {
+  padding: 1rem 1.5rem;
+}

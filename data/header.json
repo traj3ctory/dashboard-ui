@@ -1,0 +1,27 @@
+[
+  {
+    "path": "#",
+    "name": "home"
+  },
+  {
+    "path": "#",
+    "name": "dashboard",
+    "active": true
+  },
+  {
+    "path": "#",
+    "name": "projects"
+  },
+  {
+    "path": "#",
+    "name": "tasks"
+  },
+  {
+    "path": "#",
+    "name": "reporting"
+  },
+  {
+    "path": "#",
+    "name": "users"
+  }
+]
